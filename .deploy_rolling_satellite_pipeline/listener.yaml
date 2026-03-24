@@ -26,8 +26,6 @@ spec:
       default: "https://cloud.ibm.com"
     - name: commons-hosted-region
       default: "https://raw.githubusercontent.com/open-toolchain/commons/master"
-    - name: insights
-      description: The variable storing DevOps Insight integration with the toolchain
     - name: satellite-cluster-group
       description: Satelite Cluster Group
     - name: deployment-file
@@ -71,10 +69,8 @@ spec:
             value: $(params.source-repo) 
           - name: commons-hosted-region
             value: $(params.commons-hosted-region)
-          - name: insights
-            value: $(params.insights) 
           - name: satellite-cluster-group
-            value: $(params.satellite-cluster-group) 
+            value: $(params.satellite-cluster-group)
           - name: cluster-namespace
             value: $(params.cluster-namespace) 
           - name: deployment-file
